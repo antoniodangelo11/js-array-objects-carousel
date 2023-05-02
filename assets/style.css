@@ -34,14 +34,41 @@
 	width: 20%;
 }
 
-.highlighted img {
-	display: none;
+.img_container {
+    width: 100%;
+	height: 100%;
+    position: relative;
+}
+
+.title {
+    color: white;
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+}
+
+.highlighted .img_container img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.carousel .highlighted .active {
+.highlighted .img_container {
+    display: none;
+}
+
+.highlighted .img_container.active {
+    display: block !important;
+}
+
+.carousel .highlighted.active {
 	display: block;
 }
 
